@@ -4,6 +4,9 @@ Discord selfbot created with python.
 
 Commands:
 
+1. First list item
+   - First nested list item
+     - Second nested list item
 
 How to run:
     1. clone the repo
