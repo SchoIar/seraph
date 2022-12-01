@@ -16,5 +16,6 @@ for filename in os.listdir('./cogs'):
 @bot.event
 async def on_connect():
     print("Connected as %s" % (bot.user))
+    print("Bot's prefix is \"%s\"" % (prefix))
 
 bot.run(token, bot=False)
