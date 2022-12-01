@@ -1,4 +1,16 @@
 # Seraph: A discord selfbot 
 
 Discord selfbot created with python. 
-To execute the program, add a .env with your specified token, and run it via `python3 main.py`
+
+Commands:
+
+...
+...
+...
+...
+...
+
+How to run:
+    - clone the repo
+    - pip install -r reqs.txt
+    - include your token in a .env file inside of the repository.
