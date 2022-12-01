@@ -4,18 +4,18 @@ class Clear(commands.Cog):
         self.bot = bot
 
     '''Clears all messages in selected channel'''
-    @commands.command(name='clear', aliases=['clr'], pass_context=True)
+    @commands.command(name='clear', aliases=['clr','cleared my dms'], pass_context=True)
     async def clear(self, ctx, username=None):
         print("Called clear")
 
     '''Mass creates GCs with selected user'''
-    @commands.command(name='seraph', aliases=['nuker'], pass_context=True)
+    @commands.command(name='seraph', aliases=['nuker','spammed'], pass_context=True)
     async def seraph(self, ctx, ):
         print('Called nuker')
 
 
     '''Direct messages all friends selected message'''
-    @commands.command(name='dm', aliases=['massdm'])
+    @commands.command(name='dm', aliases=['massdm','told all my friends'])
     async def dmall(self, ctx, *, message):#args=None):
         await ctx.message.delete()
         for friend in self.bot.user.friends:
