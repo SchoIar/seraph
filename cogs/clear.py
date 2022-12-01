@@ -8,5 +8,7 @@ class Clear(commands.Cog):
     async def clear(self, ctx):
         print("Called clear")
 
+    '''Grabs a cat picture '''
+
 def setup(bot):
     bot.add_cog(Clear(bot))
