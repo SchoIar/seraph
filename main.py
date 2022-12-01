@@ -6,7 +6,8 @@ load_dotenv()
 token = os.getenv('TOKEN')
 
 #'i wonder if i '
-bot = commands.Bot(command_prefix='!', self_bot=True, case_sensitive=False)
+prefix = '!'
+bot = commands.Bot(command_prefix=prefix, self_bot=True, case_sensitive=False)
 
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):

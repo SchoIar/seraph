@@ -3,6 +3,7 @@
 Discord selfbot created with python. 
 
 Commands:
+Full list of tasks outlined on my website, or viewable by calling the `list` command within discord. 
 
 How to run:
 1. clone the repo
