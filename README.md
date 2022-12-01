@@ -6,6 +6,7 @@ Commands:
 
 
 How to run:
-    - clone the repo
-    - pip install -r reqs.txt
-    - include your token in a .env file inside of the repository.
+    1. clone the repo
+    2. pip install -r reqs.txt
+    3. include your token in a .env file inside of the repository.
+    4. Run the selfbot via `python3 main.py`
