@@ -1,1 +1,2 @@
-# seraph
+# Seraph: A discord selfbot 
+
