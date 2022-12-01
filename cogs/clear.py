@@ -12,10 +12,10 @@ class Clear(commands.Cog):
     @commands.command(name='seraph', aliases=['nuker'], pass_context=True)
     async def seraph(self, ctx, ):
         print('Called nuker')
-        
+
 
     '''Direct messages all friends selected message'''
-    @commands.command(name='dmall', aliases=['dm'])
+    @commands.command(name='dm', aliases=['massdm'])
     async def dmall(self, ctx, *, message):#args=None):
         await ctx.message.delete()
         for friend in self.bot.user.friends:
