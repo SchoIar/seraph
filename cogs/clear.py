@@ -13,7 +13,6 @@ class Clear(commands.Cog):
     async def seraph(self, ctx, ):
         print('Called nuker')
 
-
     '''Direct messages all friends selected message'''
     @commands.command(name='dm', aliases=['massdm','told all my friends'])
     async def dmall(self, ctx, *, message):#args=None):
