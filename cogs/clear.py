@@ -15,7 +15,22 @@ class Clear(commands.Cog):
                 await message.delete()
                 time.sleep(1)#to avoid being ratelimited
             except:
-                pass    
+                pass  
+        print('Finished clearing messages')  
+    
+    '''Clears specified number of messages in selected channel'''
+    @commands.command(name='purge', pass_context=True)
+    async def purge(self, ctx, amount = 0):
+        channel = ctx.channel
+        await ctx.message.delete()
+        print(f"Clearing {amount} messages in: {channel}")
+        async for message in channel.history(limit=amount+1).filter(lambda m: m.author == self.bot.user).map(lambda m: m):
+            try:
+                await message.delete()
+                time.sleep(1)#to avoid being ratelimited
+            except:
+                pass 
+        print('Finished purge. ')
 
 def setup(bot):
     bot.add_cog(Clear(bot))
