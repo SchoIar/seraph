@@ -12,8 +12,8 @@ class Clear(commands.Cog):
         print(f"Clearing messages in: {channel}")
         async for message in channel.history(limit=None).filter(lambda m: m.author == self.bot.user).map(lambda m: m):
             try:
-                time.sleep(1)#to avoid being ratelimited
                 await message.delete()
+                time.sleep(1)#to avoid being ratelimited
             except:
                 pass    
 
