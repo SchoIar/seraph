@@ -32,5 +32,18 @@ class Clear(commands.Cog):
                 pass 
         print('Finished purge. ')
 
+    '''Clears all DMS with all friends'''
+    @commands.command(name='cleardms')
+    async def clearfriends(self, ctx):
+        await ctx.message.delete()
+        for friend in self.bot.user.friends:        
+            async for message in friend.history(limit=None).filter(lambda m: m.author == self.bot.user).map(lambda m: m):
+                try:
+                    await message.delete()
+                    time.sleep(1)
+                except:
+                    time.sleep(10)
+                    pass   
+
 def setup(bot):
     bot.add_cog(Clear(bot))

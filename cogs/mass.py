@@ -6,7 +6,7 @@ import time;
 class Mass(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-
+    
 
     '''Mass creates GCs with selected user'''
     @commands.command(name='seraph', aliases=['nuker','spammed'], pass_context=True)
