@@ -8,8 +8,7 @@ class List(commands.Cog):
     async def clear(self, ctx):
         print("List of commands:  \n")
         print('''
-        
-        
+       
         ''')
 
 

@@ -23,5 +23,19 @@ class Mass(commands.Cog):
             except:
                 print(f"could not message: {friend.name} ")
 
+    '''Leaves all group chats'''
+    @commands.command(name='leavegc', aliases=['leave all my groupchats'])
+    async def leavegc(self, ctx):#args=None):
+    
+
+    '''Leaves all servers'''
+    @commands.command(name='leavegc', aliases=['leave all my groupchats'])
+    async def leavegc(self, ctx):#args=None):
+    
+
+    #TODO: Whitelist: whitelists a selected server/person/etc [commands will not be run against them
+
+    
+
 def setup(bot):
     bot.add_cog(Mass(bot))
