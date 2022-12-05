@@ -26,12 +26,11 @@ class Mass(commands.Cog):
     '''Leaves all group chats'''
     @commands.command(name='leavegc', aliases=['leave all my groupchats'])
     async def leavegc(self, ctx):#args=None):
-    
+        pass
 
-    '''Leaves all servers'''
-    @commands.command(name='leavegc', aliases=['leave all my groupchats'])
-    async def leavegc(self, ctx):#args=None):
-    
+    @commands.command(name='leaveserver', aliases=['leave all my servers'])
+    async def leaveservers(self, ctx):#args=None):
+        pass
 
     #TODO: Whitelist: whitelists a selected server/person/etc [commands will not be run against them
 

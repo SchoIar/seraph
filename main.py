@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 token = os.getenv('TOKEN')
 
-#'i wonder if i '
 prefix = '!'
 bot = commands.Bot(command_prefix=prefix, self_bot=True, case_sensitive=False)
 
