@@ -1,8 +1,6 @@
 # Commands for Mass usage (ie. Mass DM)
 from discord.ext import commands
 import time;
-
-
 class Mass(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
