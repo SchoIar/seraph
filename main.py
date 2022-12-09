@@ -3,8 +3,8 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 load_dotenv()
-token = os.getenv('TOKEN')
-
+#token = os.getenv('TOKEN')
+token = os.getenv('TOKEN2')
 prefix = '!'
 bot = commands.Bot(command_prefix=prefix, self_bot=True, case_sensitive=False)
 
